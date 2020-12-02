@@ -32,6 +32,7 @@ function Quiz(props) {
         return array;
       }
 
+    //calling api
     function apiCall() {
         fetch('https://opentdb.com/api.php?amount='+question+'&category='+categoryNo+'&difficulty='+difficultyType.toLowerCase()+'&type=multiple')
         .then(response => response.json())
